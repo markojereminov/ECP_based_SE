@@ -33,6 +33,7 @@ The provided code is based solely for State Estimation problem of balanced netwo
     4. Phase Shifting Transformer
     5. Fixed Shunt device
     6. Transmission Line (PI-model)
+    
     It is important to note that the provided code can handle both PMU and RTU within the same problem. For more 	information on the models see [1]. 
 
  - Test Cases: The input data for the State Estimation cases represents an .mpc file augmented with the 	additional structures related to PMU and RTU measurements. Both RTU and PMU structures are defined in terms 	of confidence intervals around the obtained measurements, i.e. PQV for RTUs and phasor voltage and current 	measurements for PMUs. See [1] for more info. Most importantly, the information about the actual measurement can be 	obtained by finding the mean of the confidence intervals. Lastly, we want to  emphasize that the test cases provided 	with the code do not represent the real measurement data but are synthetically created by running the power flow of the existing cases provided within MATPOWER [12] toolbox with the introduced noise and measurement 	errors as discussed in [1]-[2]
